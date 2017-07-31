@@ -43,3 +43,9 @@ INSERT INTO userPower VALUES('3','升级');
 INSERT INTO userPower VALUES('4','降级');
 INSERT INTO userPower VALUES('5','删除');
 INSERT INTO userInfo VALUES('1','mayan','男','读书，游戏，旅游','mayan0706','1','26');
+
+
+ALTER TABLE review ADD CONSTRAINT user_review FOREIGN KEY(userID)
+REFERENCES userinfo(userID);
+ALTER TABLE book ADD CONSTRAINT user_book FOREIGN KEY(userID)
+REFERENCES userinfo(userID);

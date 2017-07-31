@@ -13,5 +13,5 @@ public interface UserDao {
 	public void deleteByID(@Param("userID")int userID);
 	public void upUserByID(@Param("userID")int userID);
 	public void downUserByID(@Param("userID")int userID);
-	public void getUserByName(String userName);
+	public User getUserByName(String userName);
 }

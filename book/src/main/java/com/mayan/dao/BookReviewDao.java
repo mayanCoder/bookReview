@@ -12,7 +12,7 @@ import com.mayan.entity.BookReview;
 public interface BookReviewDao {
 
 	public BookReview getBookReviewById(@Param("reviewID")int reviewID);
-	public BookReview getBookReviewByTitle(@Param("title")String title);
+	public List<BookReview> getBookReviewByTitle(@Param("title")String title);
 	public List<BookReview> getBookReviewByUserID(@Param("userID")int userID);
 	public List<BookReview> getBookReviewByBookName(@Param("bookName")String bookName);
 	public void deleteByID(@Param("reviewID")int reviewID);
