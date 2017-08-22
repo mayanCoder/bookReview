@@ -1,13 +1,13 @@
 package com.mayan.entity;
 /**
- * ¶Áºó¸Ğ
+ * è¯»åæ„Ÿ
  * @author mayan
  *
  */
 public class BookReview {
 	private int reviewID;
-	private String content;//¶Áºó¸ĞÄÚÈİ
-	private String title;//¶Áºó¸Ğ±êÌâ
+	private String content;//è¯»åæ„Ÿå†…å®¹
+	private String title;//è¯»åæ„Ÿæ ‡é¢˜
 	public int getReviewID() {
 		return reviewID;
 	}
